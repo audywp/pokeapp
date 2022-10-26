@@ -1,3 +1,3 @@
 export const configApi = {
-  baseUrl: '',
+  baseUrl: 'https://pokeapi.co/api/v2',
 };

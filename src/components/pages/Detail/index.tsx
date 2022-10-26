@@ -1,10 +1,7 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import DetailTemplate from '../../templates/Detail';
 
-export default function Detail() {
-  return (
-    <View>
-      <Text>Detail</Text>
-    </View>
-  );
+export default function Detail({route}: Record<string, any>) {
+  const data = route.params.payload;
+  return <DetailTemplate data={data} />;
 }
